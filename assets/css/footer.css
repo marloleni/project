@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Times New Roman", Times, serif; }
+
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Times New Roman", Times, serif; }
+
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Times New Roman", Times, serif; }
+
+.footer-open {
+  z-index: 9;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: center; }
+  .footer-open .footer-open-button {
+    background: transparent;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 15px solid rgba(41, 36, 36, 0.6);
+    border-top: none;
+    cursor: pointer; }
+    .footer-open .footer-open-button:hover {
+      border-bottom: 15px solid rgba(68, 60, 60, 0.6); }
+  .footer-open .footer-open-button._active {
+    display: none; }
+
+footer {
+  display: none; }
+  footer .footer-close {
+    background: #292424;
+    display: flex;
+    justify-content: center; }
+    footer .footer-close .footer-close-button {
+      background: transparent;
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-top: 15px solid rgba(255, 255, 255, 0.6);
+      border-bottom: none;
+      cursor: pointer; }
+      footer .footer-close .footer-close-button:hover {
+        border-top: 15px solid rgba(230, 230, 230, 0.6); }
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 0;
+    width: 100%;
+    background: #292424; }
+    footer .footer-content .foot-cont-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px; }
+      footer .footer-content .foot-cont-list li {
+        width: 30px;
+        height: 30px; }
+        footer .footer-content .foot-cont-list li .foot-cont-item {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #d3d3d3;
+          border-radius: 50%;
+          overflow: hidden;
+          text-align: center;
+          justify-content: center; }
+    footer .footer-content hr {
+      margin: 1% auto;
+      width: 70%;
+      color: #d3d3d3; }
+    footer .footer-content .foot-cont-text {
+      color: #d3d3d3;
+      font-size: 16px;
+      text-align: center; }
+
+footer._active {
+  display: initial; }

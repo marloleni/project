@@ -1,0 +1,63 @@
+.stWatch-app {
+  z-index: 10000;
+  display: none; }
+
+.stWatch-app._active {
+  position: absolute;
+  width: 20rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.8rem black;
+  z-index: 10000; }
+  .stWatch-app._active .stWatch-titleBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: #007686;
+    cursor: move; }
+    .stWatch-app._active .stWatch-titleBar .stWatch-titleBar-title {
+      margin: 1% 5%;
+      color: white; }
+    .stWatch-app._active .stWatch-titleBar .stWatch-titleBar-close-button {
+      width: 20px;
+      height: 80%;
+      margin: 1% 5%;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px; }
+      .stWatch-app._active .stWatch-titleBar .stWatch-titleBar-close-button:hover {
+        color: #005c6d;
+        background: white; }
+  .stWatch-app._active .stWatch-display {
+    width: 100%;
+    height: 90%;
+    gap: 5%;
+    background-color: #ffe4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .stWatch-app._active .stWatch-display h1 {
+      font-size: 1rem; }
+    .stWatch-app._active .stWatch-display .stWatch-dis-in-timer {
+      font-size: 3rem; }
+    .stWatch-app._active .stWatch-display .stWatch-button {
+      background: none;
+      border: 1px solid #005c6d;
+      color: #005c6d;
+      border-radius: 8px;
+      font-size: 1rem;
+      padding: 10px 20px;
+      outline: none;
+      cursor: pointer; }
+      .stWatch-app._active .stWatch-display .stWatch-button:hover {
+        border: 1px solid #005c6d;
+        color: #eecccc;
+        background: #005c6d; }

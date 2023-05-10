@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="assets/Images/png & jpg/favicon.png"
+      type="image/png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/calc.css" />
+    <link rel="stylesheet" href="assets/css/stopWatch.css" />
+    <link rel="stylesheet" href="assets/css/weatherApp.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <a class="logo" href="firstPage.html">
+        <img src="assets/images/svg/cat-icon.svg" alt="" />
+      </a>
+      <input class="header-search" type="search" />
+      <nav class="menu">
+        <ul class="menu_list">
+          <li><a class="menu_link log-in">Log in</a></li>
+          <li><a class="menu_link sign-in">Sign in</a></li>
+        </ul>
+        <div class="profile_icon">
+          <svg
+            enable-background="new 0 0 500 500"
+            id="Layer_1"
+            version="1.1"
+            viewBox="0 0 500 500"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g>
+              <g>
+                <path
+                  d="M250,291.6c-52.8,0-95.8-43-95.8-95.8s43-95.8,95.8-95.8s95.8,43,95.8,95.8S302.8,291.6,250,291.6z M250,127.3    c-37.7,0-68.4,30.7-68.4,68.4s30.7,68.4,68.4,68.4s68.4-30.7,68.4-68.4S287.7,127.3,250,127.3z"
+                />
+              </g>
+              <g>
+                <path
+                  d="M386.9,401.1h-27.4c0-60.4-49.1-109.5-109.5-109.5s-109.5,49.1-109.5,109.5h-27.4c0-75.5,61.4-136.9,136.9-136.9    S386.9,325.6,386.9,401.1z"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <div class="loginRegPage">
+      <div class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="" />
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="" />
+            <label>Password</label>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </form>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="wrap-left">
+        <div class="wrap-left-buttons">
+          <button class="wrap-left-button calculator-button">Calculator</button>
+          <button class="wrap-left-button stopWatch-button">Stopwatch</button>
+          <button class="wrap-left-button weather-button">Weather App</button>
+          <button class="wrap-left-button">...</button>
+          <button class="wrap-left-button wrap-left-close-button">
+            Close this menu
+          </button>
+        </div>
+      </div>
+
+      <div class="wrap-left-open-button">Open</div>
+
+      <div class="wrap-right">
+        <div class="calc-app app">
+          <div class="calc-titleBar">
+            <span class="calc-titleBar-title">Calculator</span>
+            <button class="calc-titleBar-close-button">X</button>
+          </div>
+          <div class="calculator">
+            <div class="display">
+              <div class="content">
+                <div class="input"></div>
+                <div class="output"></div>
+              </div>
+            </div>
+
+            <div class="keys">
+              <div data-key="clear" class="key action">
+                <span>AC</span>
+              </div>
+              <div data-key="brackets" class="key action">
+                <span>( )</span>
+              </div>
+              <div data-key="%" class="key action">
+                <span>%</span>
+              </div>
+              <div data-key="/" class="key operator">
+                <span>÷</span>
+              </div>
+              <div data-key="7" class="key">
+                <span>7</span>
+              </div>
+              <div data-key="8" class="key">
+                <span>8</span>
+              </div>
+              <div data-key="9" class="key">
+                <span>9</span>
+              </div>
+              <div data-key="*" class="key operator">
+                <span>x</span>
+              </div>
+              <div data-key="4" class="key">
+                <span>4</span>
+              </div>
+              <div data-key="5" class="key">
+                <span>5</span>
+              </div>
+              <div data-key="6" class="key">
+                <span>6</span>
+              </div>
+              <div data-key="-" class="key operator">
+                <span>-</span>
+              </div>
+              <div data-key="1" class="key">
+                <span>1</span>
+              </div>
+              <div data-key="2" class="key">
+                <span>2</span>
+              </div>
+              <div data-key="3" class="key">
+                <span>3</span>
+              </div>
+              <div data-key="+" class="key operator">
+                <span>+</span>
+              </div>
+              <div data-key="backspace" class="key action">
+                <span>&lt;</span>
+              </div>
+              <div data-key="0" class="key">
+                <span>0</span>
+              </div>
+              <div data-key="." class="key">
+                <span>.</span>
+              </div>
+              <div data-key="=" class="key operator">
+                <span>=</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- calculator end -->
+        <!-- stopwatch start -->
+        <div class="stWatch-app app">
+          <div class="stWatch-titleBar">
+            <span class="stWatch-titleBar-title">StopWatch</span>
+            <button class="stWatch-titleBar-close-button">X</button>
+          </div>
+          <div class="stWatch-display">
+            <h1>Stopwatch</h1>
+            <div class="stWatch-dis-in-timer" id="timer">00:00:00</div>
+            <div class="stWatch-buttons">
+              <button class="stWatch-disp-in-start stWatch-button" id="start">
+                start
+              </button>
+              <button class="stWatch-dis-in-reset stWatch-button" id="reset">
+                Reset
+              </button>
+              <button class="stWatch-dis-in-stop stWatch-button" id="stop">
+                Stop
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- stopwatch end -->
+        <!-- weather app start -->
+        <div class="weather-app">
+          <div class="weather-titleBar">
+            <span class="weather-titleBar-title"></span>
+            <button class="weaher-titleBar-close-button"></button>
+          </div>
+          <div class="weather-container">
+            <div class="search-box">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" placeholder="Enter your location" />
+              <button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+
+            <div class="not-found">
+              <img src="images/404.png" />
+              <p>Oops! Invalid location :/</p>
+            </div>
+
+            <div class="weather-box">
+              <img src="" />
+              <p class="temperature"></p>
+              <p class="description"></p>
+            </div>
+
+            <div class="weather-details">
+              <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                  <span></span>
+                  <p>Humidity</p>
+                </div>
+              </div>
+              <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                  <span></span>
+                  <p>Wind Speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- weather app end -->
+        <div class="wrap-right-img">
+          <div class="eyes">
+            <div class="eye-in-white">
+              <div class="eye-in-black"></div>
+            </div>
+            <div class="eye-in-white">
+              <div class="eye-in-black"></div>
+            </div>
+          </div>
+          <img src="assets/images/png & jpg/cat.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-open">
+      <button class="footer-open-button"></button>
+    </div>
+
+    <footer>
+      <div class="footer-close">
+        <button class="footer-close-button"></button>
+      </div>
+      <div class="footer-content">
+        <ul class="foot-cont-list">
+          <li>
+            <a href="" class="foot-cont-item facebook">
+              <img width="8px" src="assets/images/svg/facebook.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="foot-cont-item telegram">
+              <img width="25px" src="assets/images/svg/telegram.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="foot-cont-item google">
+              <img width="15px" src="assets/images/svg/google.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="foot-cont-item instagram">
+              <img width="15px" src="assets/images/svg/instagram.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="foot-cont-item linkedin">
+              <img width="15px" src="assets/images/svg/linkedin.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="" class="foot-cont-item github">
+              <img width="15px" src="/assets/images/svg/github.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+        <hr />
+        <div class="foot-cont-text">© 2023 Copyright: Mara.com</div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/calc.js"></script>
+    <script src="assets/js/stopWatch.js"></script>
+    <script src="assets/js/wearherApp.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/backgounds vanta/three.min.js"></script>
+    <script src="assets/js/backgounds vanta//vanta.dots.min.js"></script>
+    <script src="assets/js/backgounds vanta/dotsLeft.js"></script>
+    <script src="assets/js/backgounds vanta/dotsRight.js"></script>
+  </body>
+</html>

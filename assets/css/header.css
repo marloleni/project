@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Times New Roman", Times, serif; }
+
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Times New Roman", Times, serif; }
+
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Times New Roman", Times, serif; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5%;
+  box-shadow: 0 5px 10px rgba(196, 55, 55, 0.3);
+  user-select: none;
+  z-index: 5; }
+  header .logo {
+    width: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #000000; }
+    header .logo:hover {
+      transform: scale(1.1); }
+  header .header-search {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0 2%;
+    width: 30%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #c9c9c9;
+    border-radius: 1rem;
+    transition: 0.4s;
+    outline: none; }
+    header .header-search:hover {
+      transform: scale(1.1) translate(-45%, 0);
+      left: 50%;
+      background: rgba(255, 255, 255, 0.8); }
+    header .header-search:focus {
+      background: rgba(255, 255, 255, 0.8);
+      transform: scale(1.1) translate(-45%, 0);
+      left: 50%;
+      border-color: #ffea00; }
+  header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1% 0; }
+    header .menu .menu_list li {
+      display: inline-block;
+      height: 100%; }
+    header .menu .menu_list .menu_link {
+      display: block;
+      padding: 10px 15px;
+      height: 100%;
+      font-size: 18px;
+      border-radius: 5px;
+      color: #000000;
+      cursor: pointer;
+      transition: 0.1s; }
+    header .menu .menu_list .log-in {
+      color: black; }
+      header .menu .menu_list .log-in:hover {
+        background: white;
+        color: black; }
+    header .menu .menu_list .sign-in {
+      color: red; }
+      header .menu .menu_list .sign-in:hover {
+        background: red;
+        color: white; }
+    header .menu .profile_icon {
+      display: none;
+      margin-left: 10px;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      background: #eeeded;
+      cursor: pointer;
+      transition: 0.3s; }
+      header .menu .profile_icon svg {
+        fill: black; }
+      header .menu .profile_icon:hover {
+        transform: scale(1.1);
+        background: black; }
+        header .menu .profile_icon:hover svg {
+          fill: white; }

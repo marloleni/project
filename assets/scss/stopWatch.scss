@@ -1,0 +1,77 @@
+@import "variables";
+@import "mixins";
+
+.stWatch-app {
+	z-index: 10000;
+	display: none;
+}
+.stWatch-app._active {
+	position: absolute;
+	width: 20rem;
+	height: 15rem;
+	@include flex;
+	flex-direction: column;
+	border-radius: 1rem;
+	overflow: hidden;
+	box-shadow: 0 0.2rem 0.8rem black;
+	z-index: 10000;
+
+	.stWatch-titleBar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: 15%;
+		background-color: $stopWatch-titleBar-bg;
+		cursor: move;
+
+		.stWatch-titleBar-title {
+			margin: 1% 5%;
+			color: $stopWatch-titleBar-txt-color;
+		}
+		.stWatch-titleBar-close-button {
+			width: 20px;
+			height: 80%;
+			margin: 1% 5%;
+			cursor: pointer;
+			border: none;
+			border-radius: 5px;
+			&:hover {
+				color: $stopWatch-titleBar-btn-hover-txt-color;
+				background: $stopWatch-titleBar-btn-hover;
+			}
+		}
+	}
+
+	.stWatch-display {
+		width: 100%;
+		height: 90%;
+		gap: 5%;
+		background-color: $stopWatch-bg;
+		@include flex;
+		flex-direction: column;
+
+		h1 {
+			font-size: 1rem;
+		}
+		.stWatch-dis-in-timer {
+			font-size: 3rem;
+		}
+		.stWatch-button {
+			background: none;
+			border: 1px solid $stopWatch-btn-brdr-color;
+			color: $stopWatch-btn-txt-color;
+			border-radius: 8px;
+			font-size: 1rem;
+			padding: 10px 20px;
+			outline: none;
+			cursor: pointer;
+
+			&:hover {
+				border: 1px solid $stopWatch-btn-brdr-hover-color;
+				color: $stopWatch-btn-txt-hover-color;
+				background: $stopWatch-btn-hover-bg;
+			}
+		}
+	}
+}
